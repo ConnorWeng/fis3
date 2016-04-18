@@ -307,4 +307,18 @@ describe('compile: builtin uri', function () {
     //},1000);
 
   });
+
+  it('compile .jsp file in ctp project', function() {
+    var file = fis.file.wrap(path.join(root, 'ctp/main.jsp'));
+    file.useCache = false;
+    fis.match('*.{js,css,json}', {
+      useHash: false
+    });
+    fis.match('::image', {
+      useHash: true
+    });
+    fis.config.set('project.type', 'ctp');
+    fis.compile(file);
+    expect(file.getContent()).to.be.equal(fis.util.read(path.join(root, 'expect/ctp', 'main.jsp')));
+  });
 });
