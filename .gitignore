@@ -48,3 +48,4 @@ node_modules/
 /test/xpy/
 /test/xpy2/
 .svn
+/test/nohup-*.vbs

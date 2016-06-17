@@ -309,6 +309,7 @@ describe('compile: builtin uri', function () {
   });
 
   it('compile .jsp file in ctp project', function() {
+    // actually compare main_bk.jsp with expect
     var file = fis.file.wrap(path.join(root, 'ctp/main.jsp'));
     file.useCache = false;
     fis.match('*.{js,css,json}', {
