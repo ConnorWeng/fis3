@@ -2,6 +2,7 @@
 <html>
 <head>
   <title></title>
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/hash/ctp/css/common.css">
 </head>
 <body>
 <script type="text/javascript" src="<%=path%>/hash/main.js"></script>

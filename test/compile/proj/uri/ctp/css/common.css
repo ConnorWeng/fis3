@@ -1,0 +1,117 @@
+@charset "utf-8";
+/*
+   CSS Document
+   Made By ZWD
+*/
+/*
+    蓝色：#4e9dd1
+    粉色：#e77a6f
+   绿色：#66E27F
+    红色：#E85F63
+    紫色：#BE83E9
+*/
+@media (min-device-width:375px){
+    html{
+        font-size: 19px;
+    }
+}
+@media (min-device-width:320px) and (max-device-width:374px){
+    html{
+        font-size: 17px;
+    }
+}
+/*
+html {
+    font-size: calc(19vw/3.75);
+}
+*/
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #EEE;
+    font-family: Arial,微软雅黑;
+}
+a{
+    text-decoration: none;
+}
+a:hover,
+a:visited,
+a:link{
+    color: #000;
+}
+*:focus {
+    outline: none;
+}
+*{
+    -webkit-appearance: none;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.clear{
+    clear: both;
+    float: none;
+}
+
+
+#header{
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    font-size: 17px;
+    /*
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+    */
+    position: fixed;
+    z-index: 99999;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(246,246,246);
+    border-bottom: 1px solid #CCC;
+}
+#header #left{
+    width: 4rem;
+    height: 100%;
+    float: left;
+    text-align: left;
+    color: RGB(215,31,47);
+}
+#header #left span{
+    margin-left: -3px;
+}
+#header #left .icon-back{
+    font-size: 1.2rem;
+    margin-left: 8px;
+}
+#header #right{
+    width: 4rem;
+    height: 100%;
+    float: right;
+    text-align: right;
+    color: RGB(215,31,47);
+}
+#header #right span{
+    padding-right: 10px;
+}
+#header #right i{
+    padding-right: 10px;
+    border-radius: 0.3rem;
+    color: RGB(215,31,47);
+}
+#header #title{
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+}
